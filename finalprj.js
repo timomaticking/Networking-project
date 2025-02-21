@@ -35,7 +35,7 @@ server.on("listening", () => {
 })
 
 function openweathermap(state, country, res) {
-    const check = `https://api.openweathermap.org/data/2.5/weather?q=${state},${country}&APPID=2ead5f41afbf3698bd55ad0783c44027`
+    const check = `https://api.openweathermap.org/data/2.5/weather?q=${state},${country}&APPID=please-put-your-api-key-here`
     //const options = { method: "GET", headers: { accept: "application/json" } };
     const journeystart = https.request(check); //send url to API
     journeystart.on("response", thefirstquest);
